@@ -8,12 +8,9 @@ To start your Dashboard:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](http://www.example.com/deployment).
+Ready to run in production? Please [check our deployment guides](https://github.com/kittoframework/kitto#deployment).
 
 ## Learn more
 
-  * Official website: TBA
-  * Guides: TBA
-  * Docs: TBA
-  * Chat: TBA
+  * Official website: http://kitto.io
   * Source: https://github.com/kittoframework/kitto

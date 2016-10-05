@@ -1,0 +1,52 @@
+<div class="gridster">
+  <ul>
+      <li data-row="1"
+          data-col="1"
+          data-sizex="1"
+          data-sizey="1">
+        <div class="widget-clock" data-widget="Clock"></div>
+      </li>
+
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div class="widget-twitter"
+           data-widget="List"
+           data-source="twitter"
+           data-title="Twitter"
+           data-moreinfo="Recent tweets for #elixir-lang"></div>
+    </li>
+
+    <li data-row="1"
+        data-col="4"
+        data-sizex="1"
+        data-sizey="2">
+      <div class="widget-travis"
+           data-source="travis"
+           data-widget="Travis"
+           data-unordered="true"
+           data-title="Travis Builds"
+           data-moreinfo=""></div>
+    </li>
+
+    <li data-row="2"
+        data-col="1"
+        data-sizex="1"
+        data-sizey="1">
+      <div class="widget-valuation"
+           data-widget="Number"
+           data-source="users"
+           data-title="Connected Users"
+           data-prefix=""></div>
+    </li>
+
+    <li data-row="2"
+        data-col="2"
+        data-sizex="2"
+        data-sizey="1">
+      <div class="widget-list widget-reddit"
+           data-unordered="true"
+           data-widget="List"
+           data-source="reddit"
+           data-title="Reddit"></div>
+    </li>
+  </ul>
+</div>

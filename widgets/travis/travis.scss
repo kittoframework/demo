@@ -1,0 +1,70 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #f1f1f1;
+$value-color:       #fff;
+
+$title-color:       #666;
+$label-color:       #555;
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-travis {
+  vertical-align: top;
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+  }
+
+  ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $label-color;
+  }
+
+  ol {
+    list-style-position: inside;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .list-nostyle {
+    list-style: none;
+  }
+
+  .label {
+    color: $label-color;
+    font-size: 13px;
+  }
+
+  .value {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $value-color;
+    font-size: 20px;
+  }
+
+  .success {
+    @extend .value;
+    color: green;
+  }
+
+  .failure{
+    @extend .value;
+    color: red;
+  }
+
+  .unknown{
+    @extend .value;
+    color: gray;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
