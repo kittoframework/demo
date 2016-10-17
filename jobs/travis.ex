@@ -1,4 +1,6 @@
-Kitto.Job.every 2, :seconds, fn (notifier) ->
+use Kitto.Job.DSL
+
+job :travis, every: {4, :seconds} do
   repo_names = ~w[elixir-lang/elixir elixir-lang/plug elixir-lang/ex_doc
    elixir-ecto/ecto phoenixframework/phoenix hexpm/hex kittoframework/kitto
    rrrene/credo edgurgel/httpoison bitwalker/distillery rails/rails]
@@ -15,5 +17,5 @@ Kitto.Job.every 2, :seconds, fn (notifier) ->
     %{label: repo, value: Demo.Travis.repo(repo)["last_build_status"] |> statuses.()}
   end)
 
-  notifier.broadcast!(:travis, %{items: builds})
+  broadcast!(:travis, %{items: builds})
 end

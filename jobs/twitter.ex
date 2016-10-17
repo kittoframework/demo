@@ -1,8 +1,8 @@
-Kitto.Job.every 2, :seconds, fn (notifier) ->
-  items = ExTwitter.search("elixir-lang", count: 2)
-  |> Enum.map(fn (t) ->
-    %{label: t.text, value: ""}
-  end)
+use Kitto.Job.DSL
 
-  notifier.broadcast!(:twitter, %{items: items})
+job :twitter, every: {20, :seconds} do
+  items = ExTwitter.search("elixir-lang", count: 2)
+          |> Enum.map(fn (t) -> %{label: t.text, value: ""} end)
+
+  broadcast!(:twitter, %{items: items})
 end
