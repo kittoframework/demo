@@ -1,5 +1,13 @@
 # Demo
 
+This demo app is deployed at http://kitto.io
+
+Example dashboards:
+
+* http://kitto.io/dashboards/sample
+* http://kitto.io/dashboards/elixir
+* http://kitto.io/dashboards/jobs
+
 To start your Dashboard:
 
   * Install dependencies with `mix deps.get`
