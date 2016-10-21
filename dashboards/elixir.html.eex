@@ -12,7 +12,7 @@
            data-widget="List"
            data-source="twitter"
            data-title="Twitter"
-           data-moreinfo="Recent tweets for #elixir-lang"></div>
+           data-moreinfo="Latest tweets for #elixir-lang"></div>
     </li>
 
     <li data-row="1"

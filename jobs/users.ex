@@ -1,3 +1,5 @@
-Kitto.Job.every :second, fn (notifier) ->
-  notifier.broadcast! :users, %{value: Kitto.Notifier.connections |> Enum.count}
+use Kitto.Job.DSL
+
+job :users, every: :second do
+  broadcast! :users, %{value: Kitto.Notifier.connections |> Enum.count}
 end
