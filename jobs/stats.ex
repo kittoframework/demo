@@ -40,3 +40,10 @@ job :footprint, every: :second do
   broadcast! :processes_count, %{value: length(:erlang.processes)}
   broadcast! :memory_usage, %{value: mem}
 end
+
+job :uptime, every: :second do
+  hours = ((:erlang.statistics(:wall_clock) |> elem(0)) / 1000 / 60.0 / 60.0)
+  |> Float.round(3)
+
+  broadcast! :uptime, %{value: hours}
+end

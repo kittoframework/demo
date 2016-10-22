@@ -253,6 +253,10 @@ h3 {
 
 .widget-list.widget-job {
   vertical-align: top;
+
+  &.time-took {
+    background-color: #9c4274;
+  }
 }
 
 // ----------------------------------------------------------------------------
