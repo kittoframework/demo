@@ -5,8 +5,16 @@ This demo app is deployed at http://kitto.io
 Example dashboards:
 
 * http://kitto.io/dashboards/sample
+
+![sample-dashboard](http://i.imgur.com/6iG6t7l.png)
+
 * http://kitto.io/dashboards/elixir
+
+![elixir-dashboard](http://i.imgur.com/70KYNTw.png)
+
 * http://kitto.io/dashboards/jobs
+
+![jobs-dashboard](http://i.imgur.com/DhNxq03.png)
 
 To start your Dashboard:
 
