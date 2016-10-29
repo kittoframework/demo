@@ -21,7 +21,7 @@ defmodule Demo.Mixfile do
   #
   # Type `mix help deps` for examples and options.
   defp deps do
-    [{:kitto, github: "kittoframework/kitto", branch: "master"},
+    [{:kitto, "~> 0.1.1"},
      {:httpoison, "~> 0.9"},
      {:oauth, github: "tim/erlang-oauth"},
      {:extwitter, "~> 0.7"}]
