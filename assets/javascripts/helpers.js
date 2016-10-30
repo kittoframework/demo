@@ -31,7 +31,8 @@ export function append(value, string) {
 }
 
 export function truncate(text, limit, omission) {
-  if (!(typeof limit === 'number')) { limit = 30; }
+  if (!(typeof text === 'string')) { text = text + ""; }
+  if (!(typeof limit === 'number') || isNaN(limit)) { limit = 30; }
   if (!(typeof omission === 'string')) { omission = '…'; }
 
   if (text.length <= limit) { return text; }

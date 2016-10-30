@@ -1,6 +1,6 @@
 import React from 'react';
 import Widget from '../../assets/javascripts/widget';
-import {updatedAt} from '../../assets/javascripts/helpers';
+import {updatedAt,truncate} from '../../assets/javascripts/helpers';
 
 import './list.scss';
 
@@ -8,8 +8,12 @@ class ListItem extends React.Component {
   render() {
     return (
       <li>
-        <span className="label">{this.props.label}</span>
-        <span className="value">{this.props.value}</span>
+        <span className="label">
+          {truncate(this.props.label, this.props.labelLength || 80)}
+        </span>
+        <span className="value">
+          {truncate(this.props.value, this.props.valueLength)}
+        </span>
       </li>
     );
   }
@@ -18,7 +22,11 @@ class ListItem extends React.Component {
 export class List extends Widget {
   renderItems(items) {
     return items.map((item, i) => {
-      return <ListItem key={i} label={item.label} value={item.value}/>;
+      return <ListItem key={i}
+                       label={item.label}
+                       value={item.value}
+                       labelLength={+this.props.labelLength}
+                       valueLength={+this.props.valueLength}/>;
     });
   }
   renderList(items) {
