@@ -29,3 +29,12 @@ export function prepend(value, string) {
 export function append(value, string) {
   return (value != null ? value : '') + (string != null ? string : '');
 }
+
+export function truncate(text, limit, omission) {
+  if (!(typeof limit === 'number')) { limit = 30; }
+  if (!(typeof omission === 'string')) { omission = '…'; }
+
+  if (text.length <= limit) { return text; }
+
+  return `${text.substr(0, limit)}${omission}`;
+}
