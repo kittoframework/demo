@@ -7,7 +7,9 @@ use Mix.Config
 
 config :kitto, root: Path.dirname(__DIR__),
   travis_token: System.get_env("TRAVIS_TOKEN"),
-  google_analytics_id: System.get_env("GOOGLE_ANALYTICS_ID")
+  google_analytics_id: System.get_env("GOOGLE_ANALYTICS_ID"),
+  ip: {:system, "KITTO_IP"},
+  port: {:system, "PORT"}
 
 config :extwitter, :oauth,
        consumer_key: System.get_env("TWITTER_CONSUMER_KEY"),
@@ -16,7 +18,6 @@ config :extwitter, :oauth,
        access_token_secret: System.get_env("TWITTER_ACCESS_TOKEN_SECRET")
 
 #config :kitto, :watch_assets?, false
-
 
 # Use port: {:system, "PORT"} to have port port configurable via env variable
 # Example: `PORT=4444 mix kitto.server` will start the server on port 4444
