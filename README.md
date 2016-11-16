@@ -2,6 +2,9 @@
 
 This demo app is deployed at http://kitto.io
 
+The [heroku](https://github.com/kittoframework/demo/tree/heroku) branch of this repo is
+also automatically deployed to heroku at: https://kitto.herokuapp.com
+
 Example dashboards:
 
 * http://kitto.io/dashboards/sample
