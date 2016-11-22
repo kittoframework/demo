@@ -85,9 +85,9 @@
         data-sizex="1"
         data-sizey="1">
       <div class="widget-convergence"
-           data-widget="Graph"
-           data-source="convergence"
-           data-title="Convergence"></div>
+           data-widget="Text"
+           data-source="twitter_linux"
+           data-title="Linux Tweets"></div>
     </li>
 
     <li data-row="3"
