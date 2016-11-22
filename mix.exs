@@ -23,6 +23,7 @@ defmodule Demo.Mixfile do
   defp deps do
     [{:kitto, github: "kittoframework/kitto"},
      {:httpoison, "~> 0.9"},
+     {:poison, "3.0.0", override: true},
      {:oauth, github: "tim/erlang-oauth"},
      {:extwitter, "~> 0.7"}]
   end
