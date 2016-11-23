@@ -86,6 +86,7 @@
         data-sizey="1">
       <div class="widget-convergence"
            data-widget="Graph"
+           data-graph-type="line"
            data-source="convergence"
            data-title="Convergence"></div>
     </li>
@@ -118,6 +119,7 @@
         data-sizey="1">
       <div class="widget-convergence"
            data-widget="Graph"
+           data-graph-type="bar"
            data-source="convergence"
            data-title="Convergence"></div>
     </li>
