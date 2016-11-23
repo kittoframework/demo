@@ -7,9 +7,7 @@ use Mix.Config
 
 config :kitto, root: Path.dirname(__DIR__),
   travis_token: System.get_env("TRAVIS_TOKEN"),
-  google_analytics_id: System.get_env("GOOGLE_ANALYTICS_ID"),
-  ip: {:system, "KITTO_IP"},
-  port: {:system, "PORT"}
+  google_analytics_id: System.get_env("GOOGLE_ANALYTICS_ID")
 
 config :extwitter, :oauth,
        consumer_key: System.get_env("TWITTER_CONSUMER_KEY"),
