@@ -18,7 +18,7 @@
     </a>
 
     <div id="container">
-      <%= template %>
+      <%= @template %>
     </div>
 
     <script type="text/javascript" src="/assets/application.js"></script>
