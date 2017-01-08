@@ -11,5 +11,5 @@ job :reddit, every: {2, :seconds} do
     %{label: post["title"], value: post["score"]}
   end)
 
-  broadcast!(:reddit, %{items: headers ++ items})
+  broadcast! %{items: headers ++ items}
 end

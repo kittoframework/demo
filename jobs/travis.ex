@@ -17,5 +17,5 @@ job :travis, every: {4, :seconds} do
     %{label: repo, value: Demo.Travis.repo(repo)["last_build_status"] |> statuses.()}
   end)
 
-  broadcast!(:travis, %{items: builds})
+  broadcast! %{items: builds}
 end
