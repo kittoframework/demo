@@ -1,6 +1,5 @@
 import React from 'react';
-import Widget from '../../assets/javascripts/widget';
-import {updatedAt} from '../../assets/javascripts/helpers';
+import {Widget} from 'kitto';
 
 import './travis.scss';
 
@@ -32,7 +31,7 @@ Widget.mount(class Travis extends Widget {
         <ul>
           {this.renderList(this.renderItems(this.state.items || []))}
         </ul>
-        <p className="updated-at">{updatedAt(this.state.updated_at)}</p>
+        <p className="updated-at">{this.updatedAt(this.state.updated_at)}</p>
       </div>
     );
   }
