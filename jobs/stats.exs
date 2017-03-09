@@ -16,7 +16,7 @@ job :job_avg_time, every: {500, :milliseconds} do
 
   metrics = stats
   |> Enum.map(fn ({name, m}) ->
-    %{label: name, value: m[:avg_time_took] |> Float.round(3) }
+    %{label: name, value: m[:avg_time_took] |> Float.round(3)}
   end)
   |> Enum.sort(fn (a, b) -> a[:value] > b[:value] end)
   |> Enum.take(15)
