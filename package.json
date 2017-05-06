@@ -21,6 +21,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "kitto": "file:deps/kitto",
     "webpack-merge": "^0.15.0",
     "webpack": "^1.12.13",
     "url-loader": "^0.5.5",
