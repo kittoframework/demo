@@ -24,7 +24,6 @@ defmodule Demo.Mixfile do
     [{:kitto, "0.5.2"},
      {:httpoison, "~> 0.9", override: true},
      {:poison, "3.0.0", override: true},
-     {:oauth, github: "tim/erlang-oauth"},
-     {:extwitter, "~> 0.7"}]
+     {:extwitter, "~> 0.9"}]
   end
 end
